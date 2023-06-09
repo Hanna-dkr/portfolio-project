@@ -23,7 +23,14 @@ h2 {
     line-height: 1.5;
     color: #4a4a4a
 }
-p {
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+li, p {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 1.3;
@@ -31,4 +38,22 @@ p {
 }
 img {
     width: 100%;
+}
+a {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    text-decoration: none
+}
+a:visited {
+    color:#4a4a4a
+}
+a:hover {
+color: #00344f;  
+font-weight: bold; 
+}
+a:focus {
+    color: #8f60ca;
+    font-weight: bold;
+    outline: 2px solid #8f60ca;   
 }

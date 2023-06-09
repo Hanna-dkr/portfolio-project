@@ -1,6 +1,20 @@
+/* 
+Colors used:
+Primary: #00818f
+Secondary:#00344f
+Background grey:#f8f8f8
+Background black: #4a4a4a
+Background white: #ffffff
+Header text: #4a4a4a
+Body Text: #4a4a4a
+*/
+
 h1 { 
+    font-family: 'Playfair Display', serif;
     font-size: 30px;
-    font-weight: 700;
+    line-height: 1.5;
+    font-style: bold;
+
     color: #4a4a4a;
    }
 body {background-color:gh ;}

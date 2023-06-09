@@ -7,14 +7,25 @@ Background black: #4a4a4a
 Background white: #ffffff
 Header text: #4a4a4a
 Body Text: #4a4a4a
+H1: Playfair Display
+H2: 
 */
 
 h1 { 
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
-    line-height: 1.5;
-    font-style: bold;
-
+    font-size: 60px;
+    line-height: 1.1;
     color: #4a4a4a;
    }
-body {background-color:gh ;}
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #4a4a4a
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #4a4a4a;
+}

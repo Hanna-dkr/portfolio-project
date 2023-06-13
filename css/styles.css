@@ -88,6 +88,17 @@ a:focus {
     max-width: 42px;
   }
 
+#index-hero {
+  display: inline-block;  
+  margin: 0px;
+  padding: 10px;
+  width: auto;
+}
+#social-links {
+    display: inline-block;
+    width: 38px;
+}
+
 /*Buttons*/
 .primary-button {
     display: inline-block;

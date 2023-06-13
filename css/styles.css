@@ -9,11 +9,34 @@ Body Text: #4a4a4a
 H1: Playfair Display
 H2: */
 
+/*Structural styling*/
 body {
     font-family:'Lato', sans-serif ;
     background-color: #ffffff;
     font-size: 16px;
 }
+main {
+    padding-top: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header {
+    background-color: pink; 
+    padding: 4px;
+    position: fixed;
+    width: 100%;
+}
+
+/*Container systems*/
+
+
+/*Text and images*/
+
 h1 {
     font-size: 40px;
     line-height: 1.1;
@@ -61,6 +84,11 @@ a:focus {
     outline: 2px solid #8f60ca;
 }
 
+.logo {
+    max-width: 42px;
+  }
+
+/*Buttons*/
 .primary-button {
     display: inline-block;
     background-color: #00344f;
@@ -83,14 +111,7 @@ a:focus {
     border-radius: 12px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24), 0 12px 25px 0 rgba(0, 0, 0, 0.19);
 }
-header {
-    background-color: pink; 
-    padding: 4px;
-    position: fixed;
-    width: 100%;
-}
 
-.logo {
-  max-width: 42px;
-}
+
+
 

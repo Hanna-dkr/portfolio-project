@@ -94,9 +94,8 @@ nav{
 .nav-tabs {
     display: inline-block;
     padding-bottom: 0px;
+    padding-right: 10px;
     float: right;
-
-  
 }
 
 /*Text and images*/
@@ -182,18 +181,24 @@ a:focus {
     display: inline-block;
     background-color: #ffffff;
     color: #4a4a4a;
-    border: 1.5px solid #00344f;
+    border: 1.5px solid #d8d8d8;
     font-weight: regular;
     padding: 12px 20px;
     text-align: center;
     border-radius: 12px;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24), 0 12px 25px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
 }
 .nav-button {
     padding: 10px;
     
 }
-.nav-button:hover {}
+.nav-button:hover {
+    font-weight: bolder;
+    border-radius: 12px;
+    border: solid 0.5px #d8d8d8;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+   
+}
 
 
 

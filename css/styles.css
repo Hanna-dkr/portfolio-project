@@ -37,31 +37,31 @@ display: flex
 
 Task:
 box-sizing: border-box
+
+ display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; 
+     align-items: center;
 */
 
-/*Structural styling*/
+/*Main page structure*/
 body {
     font-family:'Lato', sans-serif ;
     background-color: #ffffff;
     font-size: 16px;
-    max-width: 900px;
-    margin: 0 auto;
-  
+    max-width: 1000px;
+    margin: 0 auto; 
 }
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem; 
-    align-items: center;
-    padding-top: 140px;
+    padding-top: 120px;
     padding-left: 10px;
     padding-right: 10px;
    
 }
 footer {
-    padding-left: 10px;
-    padding-right: 10px;
     border: 1px solid #4a4a4a;
+     padding-left: 10px;
+    padding-right: 10px;
 }
 
 header {
@@ -69,13 +69,19 @@ header {
     padding: 4px;
     border: 1px solid #4a4a4a;
     position: fixed;
-    width: 100%;
+    width: auto;
+
 }
+
+/*Container class styling*/
 
 /*Container systems*/
 .container {
     border: 1px solid #4a4a4a;
-
+    display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	padding: 10px;
 }
 div.hero {
     display: block;

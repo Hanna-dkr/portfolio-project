@@ -9,13 +9,50 @@ Body Text: #4a4a4a
 H1: Playfair Display
 H2: */
 
+/* Notes on structure:
+Cascades top to bottom
+<p> p{} 
+class=apple .apple{}
+id=banana #banana{}
+Priority bottom to top
+
+<div> defaukt display = block; becomes container class
+<span> default display = inline; becomes text class
+<img> default =inline
+<a> default = inline
+*use inline-block when you want vertical and horizontal control. If you don't need to do this then just use inline.
+
+Position:
+'Static' is default
+'fixed' is relative to viewport and removes it flow. Controlled by top: 2px; right: 2px etc
+'absolute' positions it to nearest relative with a position set, removes it from flow
+'relative' moves it relative to natural position (also cascades)
+'float' re-orders left or right.
+clear: left, both, right.
+
+#float-boxes div: nth-child (4)
+
+class=flex can be assigned to container
+display: flex 
+
+Task:
+box-sizing: border-box
+*/
+
 /*Structural styling*/
 body {
     font-family:'Lato', sans-serif ;
     background-color: #ffffff;
     font-size: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+  
 }
 main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; 
+    align-items: center;
     padding-top: 140px;
     padding-left: 10px;
     padding-right: 10px;
@@ -37,8 +74,6 @@ header {
 
 /*Container systems*/
 .container {
-    display: block;
-    width: auto;
     border: 1px solid #4a4a4a;
 
 }

@@ -192,6 +192,44 @@ flex: 54%;
     text-align: center;
 }
 
+/*About*/
+.about-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: left;
+    padding-bottom: 20px;
+}
+.about-text {
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 30px;
+flex: 40%;
+    
+}
+#about-header {
+    display: block;    
+}
+#about-p1 {
+    display: inline-block;  
+   
+}
+#about-p2 {
+    display: inline-block;  
+   
+}
+#about-img {
+    display: inline-block;  
+    padding: 0px;
+    flex: 55%;
+  }
+  .about-button {
+    display: block; 
+    text-align: left;
+    padding-top: 20px;
+}
+
 /*Text and images*/
 
 h1 {
@@ -257,7 +295,7 @@ a:focus {
   }
 
 
-#social-links {
+.social-links {
     display: inline-block;
     width: 42px;
     padding-left: 10px;
@@ -266,9 +304,9 @@ a:focus {
 /*Buttons*/
 .primary-button {
     display: inline-block;
-    background-color: #ffffff;
+    background-color: #4a4a4a;
     border: 0.5px solid #008080;
-    color: #4a4a4a;
+    color: #ffffff;
     font-weight: regular;
     padding: 12px 20px;
     text-align: center;
@@ -277,8 +315,8 @@ a:focus {
 
 .primary-button:hover {
     display: inline-block;
-    background-color: #4a4a4a;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #4a4a4a;
     border: solid 0.5px #008080;
     font-weight: regular;
     padding: 12px 20px;
@@ -287,7 +325,7 @@ a:focus {
     box-shadow: 0 2px 6px 0 rgba(0, 128, 128, 0.20), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
 }
 .nav-button {
-    padding: 10px 20px;
+    padding: 10px 15px;
     
 }
 .nav-button:hover {
@@ -307,10 +345,17 @@ span {
     .hero-container {
         flex-direction: column;
     }
+    .about-container {
+        flex-direction: column;
+    }
     .hero-text {
         padding-left: 10px;
+        padding-top: 0px;   
+    }
+    .about-text {
+        padding-left: 10px;
+        padding-right: 10px;
         padding-top: 0px;
-        
     }
     .special-header {
         padding-left: 10px;

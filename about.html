@@ -5,115 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!--  Stylesheet  -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <!--  Stylesheet  -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-      <!--  Fonts  -->
+    <!--  Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <title>Hanna Duker | About </title>
 </head>
+
 <body>
     <!--  Top Navigation Bar  -->
     <header>
-        <div class="container"> 
-            <img src="./img/Logo.svg" class="logo" alt="Logo for Hanna Duker UX/UI Designer">
-            <nav>
-                <ul>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./index.html">Work</a></li>
-                <li><a href="#Contact">Contact</a></li>
+        <nav>
+            <ul class="nav-tabs">
+                <a class="nav-button" href="./about.html">About</a>
+                <a class="nav-button" href="./index.html#work">Work</a>
+                <a class="nav-button" href="#contact">Contact</a>
             </ul>
-            </nav>
-        </div>
+            <img src="./img/Logo.svg" class="logo" alt="Logo for Hanna Duker UX/UI Designer">
+        </nav>
     </header>
     <main>
         <!--  About Page -->
-        <div class="container">
-            <div>
-                <h1>About me</h1>
-            </div>
+        <div class="about-container">
+             <div class="about-text">
+                <h1 id="about-header"><span>About </span><span>Me</span></h1>
+                <p id="about-p1">I'm a UX Professional from an architectural background, with a passion for projects that
+                    create a
+                    positive impact. I have over ten years of experience in research, problem solving, and
+                    designing
+                    solutions for clients that are desirable to users, while being technically feasible and
+                    viable
+                    from
+                    a business perspective.</p>
+                <p id="about-p2">
+                    My goal is to create meaningful designs that solve real problems, as they are based on user
+                    research
+                    and an in-depth understanding of human behavior and needs. I am able to drive a resilient
+                    and
+                    thorough design process, while working closely with a multidisciplinary team to deliver high
+                    quality
+                    outcomes.
+                </p>
+            <div class="about-button"> <a href="./cv/Hanna Duker Resume.pdf" target="_blank" class="primary-button">View my resume</a></div>
         </div>
-        <div>
-            <div>
-                <picture>
-                    <source srcset="./img/profile-photo-cropped.png" media="(max-width:767px)">
-                    <img src="./img/profile-photo-cropped.png" alt="Picture of a laptop screen for the workaholics app">
-                </picture>
-                <div>
-                    <div>
-                        <h2>About me</h2>
-                        <p>I'm a UX Professional from an architectural background, with a passion for projects that
-                            create a
-                            positive impact. I have over ten years of experience in research, problem solving, and
-                            designing
-                            solutions for clients that are desirable to users, while being technically feasible and
-                            viable
-                            from
-                            a business perspective.</p>
-                        <p>
-                            My goal is to create meaningful designs that solve real problems, as they are based on user
-                            research
-                            and an in-depth understanding of human behavior and needs. I am able to drive a resilient
-                            and
-                            thorough design process, while working closely with a multidisciplinary team to deliver high
-                            quality
-                            outcomes.</p>
-                        <a href="./cv/Hanna Duker Resume.pdf" target="_blank" class="primary-button">View my resume</a>
-                    </div>
-                    <div>
-                        <h2>Skills & Tools</h2>
-                    </div>
-                    <div>
-                        <h3>Relevant Skills</h3>
-                        <ul>
-                            <li>item</li>
-                            <li>item</li>
-                            <li>item</li>
-                            <li>item</li>
-                            <li>item</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>item</li>
-                            <li>item</li>
-                            <li>item</li>
-                            <li>item</li>
-                            <li>item</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <picture id="about-img">
+                <source srcset="./img/hero-image.png" media="(max-width:767px)">
+                <img src="./img/hero-image.png" alt="Picture of a laptop screen for the workaholics app">
+            </picture>
         </div>
     </main>
 
-    <footer>
-        <!--  Contact -->
-        <div id="Contact">
-            <h2>Let's talk more</h2>
-            <p>hanna.duker@gmail.com</p>
-            <div>
-                <a href="https://www.linkedin.com/in/hanna-duker-26827620a/" target="_blank"><img
+    <footer id="contact">
+        <div class="special-header">
+            <h2>Get in touch with me</h2>
+        </div>
+        <div id="footer-container">
+            <p class="footer-p">hanna.duker@gmail.com</p>
+            <div class="footer-links">
+                <a class="social-links" href="https://www.linkedin.com/in/hanna-duker-26827620a/" target="_blank"><img
                         src="./img/LinkedIn.svg" class="__web-inspector-hide-shortcut__"></a>
-                <a href="https://www.behance.net/hannaduker" target="_blank"><img src="./img/Behance.svg"
-                        class="__web-inspector-hide-shortcut__"></a>
+                <a class="social-links" href="https://www.behance.net/hannaduker" target="_blank"><img
+                        src="./img/Behance.svg" class="__web-inspector-hide-shortcut__"></a>
             </div>
         </div>
-        <div>
-            <p>Copyright Hanna Duker 2023</p>
+        <div id="copy-rites">
+            <h4>Copyright Hanna Duker 2023</h4>
         </div>
     </footer>
 

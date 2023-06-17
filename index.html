@@ -28,95 +28,90 @@
 <body>
     <!--  Top Navigation Bar  -->
     <header>
-           
-            <nav>
-                <ul class="nav-tabs">
-                    <a class="nav-button" href="./about.html">About</a>
-                    <a class="nav-button" href="#Work">Work</a>
-                    <a class="nav-button" href="#Contact">Contact</a>
-                </ul>
-                <img src="./img/Logo.svg" class="logo" alt="Logo for Hanna Duker UX/UI Designer">
-            </nav>
+        <nav>
+            <ul class="nav-tabs">
+                <a class="nav-button" href="./about.html">About</a>
+                <a class="nav-button" href="#Work">Work</a>
+                <a class="nav-button" href="#Contact">Contact</a>
+            </ul>
+            <img src="./img/Logo.svg" class="logo" alt="Logo for Hanna Duker UX/UI Designer">
+        </nav>
     </header>
     <main>
 
         <!--  Hero  -->
-        <div class="container">
-            <div>
-                <picture id="index-hero">
-                    <source srcset="./img/profile-photo-cropped.png" media="(max-width:767px)">
-                    <img src="./img/profile-photo-cropped.png" alt="Picture of a laptop screen for the workaholics app">
-                </picture>
-            </div>
-            <div>
-                <h1>I'm Hanna Duker, a UX Designer based in Cape Town</h1>
-                <p>I love solving problems. Especially when the solution benefits the planet and our human experience. I
+        <div class="hero-container">
+
+            <div class="hero-text">
+                <h1 id="hero-header">I'm <span>Hanna </span><span>Duker</span>, a UX Designer based in Cape Town</h1>
+                <p id="hero-p">I love solving problems. Especially when the solution benefits the planet and our human
+                    experience. I
                     use my design-research experience in architecture to bring a unique perspective to UX and create
                     impactful solutions.</p>
             </div>
+            <picture id="hero-img">
+                <source srcset="./img/hero-image.png" media="(max-width:767px)">
+                <img src="./img/hero-image.png" alt="Picture of a laptop screen for the workaholics app">
+            </picture>
+
         </div>
+        <div class="special-header">
+            <h2>My latest work</h2>
+        </div>
+
         <!--  Work -->
 
-        <section class="container" id="Work">
-            <div>
-                <h2>My work</h2>
+        <!--  Project 1 -->
+        <div class="container">
+            <picture class="container-img">
+                <source srcset="./olive/cocer-pic.png" media="(max-width:767px)">
+                <img src="./olive/cocer-pic.png" alt="Picture of a laptop screen for the workaholics app">
+            </picture>
+            <div class="container-text">
+                <h1 class="container-header"><span>UX Case Study: </span> A webapp designed for workaholics
+                </h1>
+                <p class="container-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="container-button">
+                    <a href="./olive.html" class="primary-button">View project</a>
+                </div>
             </div>
-            <!--  Project 1 -->
-            <div>
-                <h1>A web app for workaholics</h1>
-                <picture>
-                    <source srcset="./olive/cocer-pic.png" media="(max-width:767px)">
-                    <img src="./olive/cocer-pic.png" alt="Picture of a laptop screen for the workaholics app">
-                </picture>
-            </div>
-            <div>
-                <p>UX Case Study for Olive, a responsive web app designed to help workaholics find balance </p>
-                <a href="./olive.html" class="primary-button">View project</a>
-            </div>
-            <!--  Project 2 -->
-            <div>
-                <h1>A payment funnel for elderly users</h1>
-                <picture>
-                    <source srcset="./jlw-studio/jlw-cover-pic.png" media="(max-width:767px)">
-                    <img src="./jlw-studio/jlw-cover-pic.png" alt="picture of an android phone for the payment app">
-                </picture>
-            </div>
-            <div>
-                <p>UX Case Study for the JLW Studios app, a responsive web app designed to help elderly people purchase
-                    exercise classes </p>
-                <a href="#" class="primary-button">View project</a>
-            </div>
-            <!--  Project 3 -->
-            <div>
-                <h1>UX Case Study</h1>
-                <picture>
-                    <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                    <img src="http://via.placeholder.com/800x600"
-                        alt="Pictur of a laptop screen for the workaholics app">
-                </picture>
-            </div>
-            <div>
-                <p>UX Case Study, Lorem ipsum dolar sir </p>
-                <a href="#" class="primary-button">View project</a>
-            </div>
-        </section>
 
 
-    </main>
-    <footer class="container">
-        <!--  Contact -->
-        <div id="Contact">
-            <h2>Let's talk more</h2>
-            <p>hanna.duker@gmail.com</p>
-            <div> id="social-links">
-                <a href="https://www.linkedin.com/in/hanna-duker-26827620a/" target="_blank"><img
+        </div>
+        <!--  Project 2 -->
+        <div class="container">
+            <picture class="container-img-jlw">
+                <source srcset="./jlw-studio/jlw-cover-pic.png" media="(max-width:767px)">
+                <img src="./jlw-studio/jlw-cover-pic.png" alt="picture of an android phone for the payment app">
+            </picture>
+            <div class="container-text">
+                <h1 class="container-header"><span>UX Case Study: </span> A webapp designed for workaholics
+                </h1>
+                <p class="container-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="container-button">
+                    <a href="./olive.html" class="primary-button">View project</a>
+                </div>
+            </div>
+        </div>     
+    <footer>
+        <div class="special-header">
+            <h2>Get in touch with me</h2>
+        </div>
+        <div id="footer-container">
+            <p class="footer-p" >hanna.duker@gmail.com</p>
+            <div class="footer-links">
+                <a id="social-links" href="https://www.linkedin.com/in/hanna-duker-26827620a/" target="_blank"><img
                         src="./img/LinkedIn.svg" class="__web-inspector-hide-shortcut__"></a>
-                <a href="https://www.behance.net/hannaduker" target="_blank"><img src="./img/Behance.svg"
+                <a id="social-links" href="https://www.behance.net/hannaduker" target="_blank"><img src="./img/Behance.svg"
                         class="__web-inspector-hide-shortcut__"></a>
             </div>
         </div>
-        <div>
-            <p>Copyright Hanna Duker 2023</p>
+        <div id="copy-rites" >
+            <h4>Copyright Hanna Duker 2023</h4>
         </div>
     </footer>
 

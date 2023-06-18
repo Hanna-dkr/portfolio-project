@@ -133,8 +133,19 @@ flex: 40%;
     margin-bottom: 20px;
     padding: 20px;
 }
+#red {
+    background:#f895a2;
+}
+#yellow {
+    background: #fbc267;
+}
+#blue {
+    background: #30638e;
+}
 .container-text {
     display: inline-block;
+    background: #ffffff;
+    border-radius: 12px; 
     padding-left: 30px;
     padding-top: 0px;
 flex: 54%;  
@@ -144,9 +155,10 @@ flex: 54%;
 }
 .container-p {
     display: inline-block;  
+    padding-right: 20px;
 }
 .container-img {
-    display: inline-block;  
+    display: inline-block; 
     padding: 0px;
     flex: 46%;
   }
@@ -155,9 +167,16 @@ flex: 54%;
     padding: 25px;
     flex: 46%;
   }
+  .container-img-comunity {
+    display: inline-block; 
+    padding: 25px;
+    flex: 46%;
+  }
 .container-button {
     display: block; 
     text-align: left;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 /*Footer*/
@@ -338,7 +357,7 @@ a:focus {
    
 }
 span {
-    color: #008080;
+    color: #30638e;
 }
 /*Respinsive behaviour*/
 @media (max-width: 800px) {
@@ -362,7 +381,7 @@ span {
     }
     .container {
         flex-direction: column;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     .container-text {
          padding-left: 10px;
@@ -370,5 +389,8 @@ span {
     }
     .container-button {
     text-align: right;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
 }
 }

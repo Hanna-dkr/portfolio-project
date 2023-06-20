@@ -62,7 +62,7 @@ body {
     font-family:'Lato', sans-serif ;
     background-color: #ffffff;
     font-size: 16px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto; 
 }
 main {
@@ -74,16 +74,15 @@ main {
 
 header {
     display: flex;
-    max-width: 1200px;
+    max-width: 1000px;
     width:100%;
     background-color: #ffffff; 
     padding: 10px 10px 5px 10px;
-    border-bottom: 1px solid #4a4a4a;
     position: fixed;
     align-content: flex-end;
     align-items: flex-end;
     flex-direction: row-reverse;
-    z-index: 1;
+    z-index: 2;
 }
 nav{
     width: 100%;
@@ -93,8 +92,19 @@ nav{
     padding-bottom: 0px;
     padding-right: 0px;
     float: right;
+   
 }
-
+.logo {
+    display: inline;
+    max-width: 48px;
+    float: left;
+  }
+.fa-solid fa-bars {
+    color: #4a4a4a;
+}
+.navtoggle li:last-child {
+    display: none;
+}
 
 /*Hero section*/
 .hero-container {
@@ -110,10 +120,12 @@ nav{
     padding-left: 30px;
     padding-top: 30px;
 flex: 40%;
+z-index: 1;
     
 }
 #hero-header {
-    display: block;    
+    display: block;   
+
 }
 #hero-p {
     display: inline-block;  
@@ -131,7 +143,7 @@ flex: 40%;
 }
 .container {
   
-    border-radius: 24px;
+    border-radius: 40px;
     background: #f8f8f8;
     display: flex;
     flex-direction: row;
@@ -143,6 +155,7 @@ flex: 40%;
     padding: 20px;
     position: relative;
     z-index: 0;
+  
     
 }
 .container:hover {
@@ -186,13 +199,15 @@ flex: 40%;
 .container-text {
     display: inline-block;
     background: #ffffff;
-    border-radius: 12px; 
+    border-radius: 20px; 
     padding-left: 30px;
     padding-top: 0px;
 flex: 54%;  
 }
 .container-header {
-    display: block;    
+    display: block;
+        padding-right: 20px;   
+   
 }
 .container-p {
     display: inline-block;  
@@ -348,11 +363,6 @@ a:focus {
     outline: 2px solid #8f60ca;
 }
 
-.logo {
-    display: inline;
-    max-width: 48px;
-    float: left;
-  }
 
 
 .social-links {
@@ -370,7 +380,7 @@ a:focus {
     font-weight: regular;
     padding: 12px 20px;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 10px;
   
 }
 
@@ -382,7 +392,7 @@ a:focus {
     font-weight: regular;
     padding: 12px 20px;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 0 2px 6px 0 rgba(0, 128, 128, 0.20), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
 }
 .nav-button {
@@ -413,6 +423,7 @@ span {
         padding-left: 10px;
         padding-top: 0px;   
     }
+  
     .about-text {
         padding-left: 10px;
         padding-right: 10px;
@@ -434,5 +445,12 @@ span {
     padding-bottom: 10px;
     padding-right: 10px;
     padding-top: 0px;
-}
+    }
+    .navtoggle li:nth-child(-n+3) {
+        display: none;
+    }
+    .navtoggle li:last-child {
+        display: inline-block;
+    }
+
 }

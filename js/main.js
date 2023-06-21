@@ -5,7 +5,13 @@
 // Null and undefined: They both indicate no value has been set. undefined means never set, null means empty value //
 // Objects are complex data types. var person = { name: "John", age: 39};
 
-
-
-
 console.log("Hello and welcome to my portfolio site")
+function menuToggle() {
+    console.log("Clicked")
+    var navMenu = document.getElementById ("js-menu");
+        console.log(navMenu.className);
+        navMenu.classList.toggle("hide")  
+        }
+
+
+   

@@ -8,10 +8,10 @@
 console.log("Hello and welcome to my portfolio site")
 function menuToggle() {
     console.log("Clicked")
-    var navMenu = document.getElementById ("js-menu");
-        console.log(navMenu.className);
-        navMenu.classList.toggle("hide")  
-        }
+    var navMenu = document.getElementById("js-menu");
+    console.log(navMenu.className);
+    navMenu.classList.toggle("hide")
+}
 
 
-   
+

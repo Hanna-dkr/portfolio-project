@@ -29,13 +29,24 @@
 <body>
     <!--  Top Navigation Bar  -->
     <header>
-        <nav class="navtoggle" id="myNavtoggle">
-            
+        <nav id="wide-nav">
             <ul class="nav-tabs">
                 <li><a class="nav-button" href="./about.html">About</a></li>
                 <li><a class="nav-button" href="./index.html#work">Work</a></li>
                 <li><a class="nav-button" href="#contact">Contact</a></li>
-                <li><a class="nav-button" href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+            <img src="./img/Logo.svg" class="logo" alt="Logo for Hanna Duker UX/UI Designer">
+        </nav>
+
+        <nav id="skinny-nav">
+            <a class="nav-button-icon" href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                    class="fa-solid fa-bars"></i></a>
+            <ul class="nav-tabs hide" id="js-menu">
+             <div class="dropdown">
+                <li><a class="skinny-nav-button" href="./about.html">About</a></li>
+                <li><a class="skinny-nav-button" href="./index.html#work">Work</a></li>
+                <li><a class="skinny-nav-button" href="#contact">Contact</a></li>
+            </div>
             </ul>
             <img src="./img/Logo.svg" class="logo" alt="Logo for Hanna Duker UX/UI Designer">
         </nav>

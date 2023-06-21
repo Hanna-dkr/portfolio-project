@@ -52,6 +52,9 @@ transition-delay:
 */
 
 /*Layout styling*/
+html {
+    scroll-behavior: smooth;
+}
 * {
     box-sizing:border-box;
     transition: all 0.3s ease out;
@@ -72,17 +75,21 @@ main {
    
 }
 
+/*Main page structure*/
 header {
     display: flex;
     max-width: 1000px;
     width:100%;
     background-color: #ffffff; 
-    padding: 10px 10px 5px 10px;
+    padding: 10px 10px 10px 10px;
     position: fixed;
     align-content: flex-end;
     align-items: flex-end;
     flex-direction: row-reverse;
     z-index: 2;
+    border-bottom: solid 1px #f0f0f0;
+    margin-left: auto;
+    
 }
 nav{
     width: 100%;
@@ -91,20 +98,43 @@ nav{
     display: inline-block;
     padding-bottom: 0px;
     padding-right: 0px;
-    float: right;
-   
+    padding-left: 0px;
+    float: right;  
+    z-index: 0;
+    width:100%;
+    text-align: right;
+    
 }
 .logo {
     display: inline;
     max-width: 48px;
-    float: left;
+    position: fixed;
   }
-.fa-solid fa-bars {
-    color: #4a4a4a;
-}
-.navtoggle li:last-child {
+.hide {
     display: none;
 }
+.nav-button {
+    padding: 10px 15px;   
+}
+.nav-button:hover {
+    font-weight: bolder;
+    border-radius: 12px;
+    background: #000000;
+    color: #ffffff;
+    border: solid 0.5px #008080;
+    box-shadow: 0 2px 6px 0 rgba(0, 128, 128, 0.20), 0 2px 2px 0 rgba(0, 0, 0, 0.10);  
+}
+.nav-button-icon {
+    padding: 10px 15px;
+    font-size: 24px;
+    float: right;
+}
+.nav-button-icon:hover {
+    font-weight: bolder;
+    font-size: 24px;
+    color: #4a4a4a;
+}
+
 
 /*Hero section*/
 .hero-container {
@@ -357,14 +387,6 @@ a:hover {
     font-weight: bold;
 }
 
-a:focus {
-    color: #4a4a4a;
-    font-weight: bold;
-    outline: 2px solid #8f60ca;
-}
-
-
-
 .social-links {
     display: inline-block;
     width: 42px;
@@ -395,24 +417,14 @@ a:focus {
     border-radius: 10px;
     box-shadow: 0 2px 6px 0 rgba(0, 128, 128, 0.20), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
 }
-.nav-button {
-    padding: 10px 15px;
-    
-}
-.nav-button:hover {
-    font-weight: bolder;
-    border-radius: 12px;
-    background: #4a4a4a;
-    color: #ffffff;
-    border: solid 0.5px #008080;
-    box-shadow: 0 2px 6px 0 rgba(0, 128, 128, 0.20), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+
    
-}
+
 span {
     color: #30638e;
 }
-/*Respinsive behaviour*/
-@media (max-width: 800px) {
+/*Responsive behaviour*/
+@media (max-width: 768px) {
     .hero-container {
         flex-direction: column;
     }
@@ -446,11 +458,84 @@ span {
     padding-right: 10px;
     padding-top: 0px;
     }
-    .navtoggle li:nth-child(-n+3) {
+    .navtoggle li:not(:first-child) {
+        display: block;
+        background: #4a4a4a;
+    }
+    header {
+        background: #f8f8f8;
+    }
+    nav{
+        float: right;
+        width: 100%;
+         
+    }
+    .navtoggle li:first-child {
+        display: inline-block;
+        position: relative;
+    left: 40px;
+    }
+    .nav-button {
+        display: block;
+        padding: 14px;
+        color: #ffffff;
+    }
+    #wide-nav {
         display: none;
     }
-    .navtoggle li:last-child {
-        display: inline-block;
+    .skinny-nav-button {
+        display: block;
+        text-align: center;
     }
-
+    .skinny-nav-button {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+    .skinny-nav-button:hover {
+        display: block;
+        text-align: center;
+        font-size: 17px;
+        padding: 10px;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px;
+        background: #f8f8f8;
+        align-self: center;
+      width: 100%;
+    }
 }
+@media (min-width: 769px) {
+    #skinny-nav {
+        display: none;
+    }
+}
+
+/*.
+    
+}
+.nav-button:hover {
+    font-weight: bolder;
+    border-radius: 12px;
+    background: #4a4a4a;
+    color: #ffffff;
+    border: solid 0.5px #008080;
+    box-shadow: 0 2px 6px 0 rgba(0, 128, 128, 0.20), 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+/*
+Re-look children behaviour
+
+.navtoggle.responsive li  {
+    display: block;
+  }
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    transition: -5s ease-in-out;
+}
+*/
